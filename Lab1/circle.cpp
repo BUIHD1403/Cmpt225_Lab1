@@ -27,6 +27,12 @@ circle::circle(int x, int y, double r)
 	
 }//Rectangle(int, int)
 
+void circle::move(int h, int v)
+{
+	x_coordinate = x_coordinate + h;
+	y_coordinate = y_coordinate + v;
+	return ;
+}
  // Getters that return information about the rectangle
 int circle::getX() const
 {
@@ -38,7 +44,7 @@ int circle::getY() const
 	return y_coordinate;
 }//getHeight
 
-double circle::getRadius() 
+double circle::getRadius() const
 {
 	return radius;
 }
@@ -50,7 +56,17 @@ double circle::getArea()
 	return area;
 }
 
- // Display method that prints the rectangle's height and width
+void circle::setRadius(double r)
+{
+	if (r > 0.0)
+	{
+		radius = r;
+	}
+	else
+		radius = 10.0;
+}
+ 
+// Display method that prints the rectangle's height and width
 void circle::displayCircle() const
 {
 	cout << endl << "x_coordinate = " << getX();
