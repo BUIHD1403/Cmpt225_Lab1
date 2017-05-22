@@ -75,4 +75,8 @@ void circle::displayCircle() const
 
 }//displayRectangle
 
+bool circle::intersect(circle c)
+{
+
+}
  // End of the implementation file

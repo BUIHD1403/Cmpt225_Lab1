@@ -37,5 +37,6 @@ public: //everything that follows is public
 	// Display method that prints the rectangle's height and width
 	void displayCircle() const;
 
+	bool intersect(circle c);
 }; //Rectangle - note the ";" - don't forget it!
    // End of the header file
